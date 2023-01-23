@@ -35,7 +35,7 @@ void StudentManager::removeStudent(Student *student){
         if(list_Student[i] == student){
             list_Student.remove(i);
             delete student;
-            delete List_Student_Dialog;
+//            delete List_Student_Dialog;
         }
     }
 }
@@ -67,7 +67,7 @@ StudentManager::~StudentManager()
 
 void StudentManager::on_pushButton_2_clicked()
 {
-    removeStudent((Student *) ui->listWidget->currentItem());
+    removeStudent( (Student *) ui->listWidget->currentItem());
 }
 
 
