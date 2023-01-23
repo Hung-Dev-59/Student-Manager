@@ -24,7 +24,7 @@ void StudentManager::addStudent(QString name)
     Student *student = new Student(name);
     addStudent(student);
 }
-void StudentManager::addStudent(QString name, QString major,double id, QString Class){
+void StudentManager::addStudent(QString name, QString major,QString id, QString Class){
     Student *student = new Student(name, major,id,Class);
     addStudent(student);
 }
@@ -46,7 +46,7 @@ void StudentManager::on_listWidget_itemClicked(QListWidgetItem *item)
 
         ui->name->setText(student->getName());
         ui->major->setText(student->getMajor());
-        ui->id->setNum(student->getId());
+        ui->id->setText(student->getId());
         ui->class_2->setText(student->getClass());
 }
 

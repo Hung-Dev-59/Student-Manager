@@ -6,7 +6,7 @@ Student::Student(QString name)
 
 }
 
-Student::Student(QString name,QString major,double id,QString Class)
+Student::Student(QString name,QString major,QString id,QString Class)
     :QListWidgetItem(name), major(major),id(id),Class(Class)
 {
 

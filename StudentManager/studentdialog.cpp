@@ -11,10 +11,9 @@ StudentDialog::StudentDialog(QWidget *parent) :
 }
 
 void StudentDialog::Show(Student *student){
-    QString s = QString::number(student->getId());
     ui->name->setText(student->getName());
     ui->major->setText(student->getMajor());
-    ui->id->setText("Do not edit");
+    ui->id->setText(student->getId());
     ui->class_2->setText(student->getClass());
     list_Student = student;
     show();
@@ -29,6 +28,7 @@ void StudentDialog::on_pushButton_released()
 {
     list_Student->setName(ui->name->text());
     list_Student->setMajor(ui->major->text());
+    list_Student->setId(ui->id->text());
     list_Student->setClass(ui->class_2->text());
     hide();
 

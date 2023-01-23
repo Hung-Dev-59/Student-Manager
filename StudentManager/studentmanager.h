@@ -20,7 +20,7 @@ public:
     ~StudentManager();
     void addStudent(Student *student);
     void addStudent(QString name);
-    void addStudent(QString name,QString major,double id,QString Class);
+    void addStudent(QString name,QString major,QString id,QString Class);
     void removeStudent(Student *student);
 private slots:
     void on_listWidget_itemDoubleClicked(QListWidgetItem *item);
